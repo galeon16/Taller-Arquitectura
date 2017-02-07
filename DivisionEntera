@@ -1,0 +1,23 @@
+/*Realice un programa calcule la división entera entre dos números enteros.*/
+#include <iostream>
+using namespace std;
+
+int division(int n, int m){
+    int p = n;
+    int i=0;
+    for(i;p>0;i++){
+      p=p-m;        
+    }
+    return i;
+}
+
+int main(){
+    int x, y;
+    cout<<"Ingrese el dividendo"<<endl;
+    cin>>x;
+    cout<<"Ingrese el divisor"<<endl;
+    cin>>y;
+    int f = division(x,y);
+    cout<<f;
+    system("pause");
+}
