@@ -1,0 +1,22 @@
+/*Hacer un programa que calcule la multiplicación de dos enteros sin signo usando solo sumas.*/
+#include <iostream>
+using namespace std;
+
+int multiplicacionveces(int n, int m){
+    int p=0;
+    for(int i=0;i<m;i++){
+            p=p+n;        
+    }
+    return p;
+}
+
+int main(){
+    int x, y;
+    cout<<"Ingrese el primer factor"<<endl;
+    cin>>x;
+    cout<<"Ingresar el segundo factor"<<endl;
+    cin>>y;
+    int z = multiplicacionveces(x,y);
+    cout<<z<<endl;
+    system("pause");
+}
